@@ -9,12 +9,14 @@ Campusमिलन Ai is an intelligent, automated Lost and Found platform built
   - Express.js Backend (Authentication, Business Logic, Web APIs)
   - FastAPI AI Service (Hugging Face Transformers inference endpoint)
   - React + Vite Web Client (Beautiful Glassmorphism interfaces built with Tailwind CSS v4 and Framer Motion)
+  - React Native (Expo) Mobile App for on-the-go reporting and scanning
 - **Role-based Authentication:** Independent student dashboards and administrative moderation panels.
 - **Comprehensive UX:** Dynamic routing, skeleton loaders, protected sessions, and unified design token logic.
 
 ## Technology Stack 🛠️
 
-- **Frontend**: React 19, Vite, Tailwind CSS v4, Framer Motion, Zustand, React Router DOM, Axios, Lucide React, Recharts.
+- **Frontend (Web)**: React 19, Vite, Tailwind CSS v4, Framer Motion, Zustand, React Router DOM, Axios, Lucide React, Recharts.
+- **Frontend (Mobile)**: React Native, Expo, Tailwind CSS (twrnc).
 - **Backend API**: Node.js, Express, MongoDB (Mongoose), JWT Auth.
 - **AI Engine**: Python 3, FastAPI, sentence-transformers, PyTorch 2, scikit-learn.
 
@@ -25,6 +27,7 @@ Campusमिलन-Ai/
 ├── ai-service/        # Python FastAPI engine (Similarity models)
 ├── backend/           # Node.js backend (Core APIs & Database)
 ├── web/               # React Vite client (User & Admin interfaces)
+├── mobile/            # React Native Expo app (Mobile companion)
 ├── admin/             # (Placeholder / Included in web routes)
 ├── docs/              # Additional design documents
 └── tests/             # QA and specific tests
@@ -61,6 +64,13 @@ The AI service automatically exposes matching algorithms on port `8000`.
 3. Run the vite client: `npm run dev`
 4. Open your browser at `http://localhost:5173`.
 
+### 5. Run the Mobile App
+
+1. Navigate to mobile frontend: `cd mobile`
+2. Install dependencies: `npm install`
+3. Start Expo development server: `npx expo start`
+4. Use the Expo Go app on your phone to scan the QR code and test the mobile application.
+
 ## AI Matching Explanation 🧠
 
 Campusमिलन-Ai avoids trivial keyword searching.
@@ -80,7 +90,6 @@ Overall match yields exceeding **70%** triggers an automated notification and po
 
 ## Future Enhancements 🔮
 
-- **Mobile app companion** via React Native (see `/mobile` shell directory).
 - Native push notifications via WebSockets.
 - Fully fledged image similarity indexing.
 
