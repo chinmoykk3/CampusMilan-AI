@@ -32,7 +32,7 @@ const startServer = async () => {
 
     const server = httpServer.listen(env.port, () => {
       console.log("======================================");
-      console.log("       CAMPUSFIND AI BACKEND");
+      console.log("       CAMPUSमिलन AI BACKEND");
       console.log("======================================");
       console.log(`🚀 Server: http://localhost:${env.port}`);
       console.log(`❤️  Health: http://localhost:${env.port}/api/health`);
@@ -58,7 +58,7 @@ const startServer = async () => {
 
     process.on("SIGTERM", () => shutdown("SIGTERM"));
   } catch (error) {
-    console.error("❌ Failed to start CampusFind AI backend");
+    console.error("❌ Failed to start Campusमिलन Ai backend");
 
     console.error(error);
 

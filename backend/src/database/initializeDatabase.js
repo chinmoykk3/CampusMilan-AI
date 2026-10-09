@@ -7,7 +7,7 @@ const Notification = require("../models/Notification");
 const AuditLog = require("../models/AuditLog");
 
 const initializeDatabase = async () => {
-    console.log("🔧 Initializing CampusFind AI database...");
+    console.log("🔧 Initializing Campusमिलन Ai database...");
 
     await Promise.all([
         User.createIndexes(),

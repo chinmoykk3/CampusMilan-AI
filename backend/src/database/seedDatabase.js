@@ -140,7 +140,7 @@ const seedLocations = async () => {
 };
 
 const seedDatabase = async () => {
-    console.log("🌱 Seeding CampusFind AI database...");
+    console.log("🌱 Seeding Campusमिलन Ai database...");
 
     await seedCategories();
     await seedLocations();

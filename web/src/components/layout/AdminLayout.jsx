@@ -63,7 +63,7 @@ const AdminLayout = () => {
                         <MapPin className="h-6 w-6" />
                     </div>
                     <span className="font-extrabold text-2xl tracking-tight text-primary-900 font-display">
-                        Campus<span className="font-medium text-primary-600">Admin</span>
+                        Campusमिलन<span className="font-medium text-primary-600"> Admin</span>
                     </span>
                 </div>
 

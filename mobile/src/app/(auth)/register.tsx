@@ -61,7 +61,7 @@ export default function RegisterScreen() {
                                 <TouchableOpacity onPress={() => router.back()} style={tw`w-11 h-11 bg-white/10 rounded-full items-center justify-center mb-6`}>
                                     <Ionicons name="arrow-back" size={24} color="white" />
                                 </TouchableOpacity>
-                                <Text style={tw`text-4xl font-extrabold text-white tracking-tight shadow-md shadow-black/20`}>Join CampusFind</Text>
+                                <Text style={tw`text-4xl font-extrabold text-white tracking-tight shadow-md shadow-black/20`}>Join Campusमिलन</Text>
                                 <Text style={tw`text-sky-100 mt-2 text-base font-medium tracking-wide`}>Create your student account.</Text>
                             </View>
 

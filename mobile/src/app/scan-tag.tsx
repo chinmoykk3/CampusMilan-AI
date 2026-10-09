@@ -57,7 +57,7 @@ export default function ScanTagScreen() {
             // Unrecognized QR Tag payload
             Alert.alert(
                 "Invalid Protocol",
-                `The scanned Smart Tag does not contain a valid CampusFind Telemetry trace.\n\nPayload: ${data}`,
+                `The scanned Smart Tag does not contain a valid Campusमिलन Telemetry trace.\n\nPayload: ${data}`,
                 [
                     { text: "Dismiss", onPress: () => setScanned(false) }
                 ]

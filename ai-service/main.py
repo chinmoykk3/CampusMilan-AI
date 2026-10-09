@@ -9,7 +9,7 @@ import urllib.error
 from inference import get_text_similarity, get_image_similarity, get_text_model, get_image_model
 
 app = FastAPI(
-    title="CampusFind AI Service",
+    title="Campusमिलन Ai Service",
     description="Microservice for multimodal similarity matching using NLP and Vision Models",
     version="1.0.0"
 )
@@ -25,7 +25,7 @@ app.add_middleware(
 # Startup event to load models into memory
 @app.on_event("startup")
 async def startup_event():
-    print("Initializing CampusFind AI Service...")
+    print("Initializing Campusमिलन Ai Service...")
     get_text_model()
     get_image_model()
     print("Models loaded successfully.")
@@ -46,7 +46,7 @@ class ImageUrlRequest(BaseModel):
 
 @app.get("/health")
 def health_check():
-    return {"status": "healthy", "service": "campusfind-ai-service"}
+    return {"status": "healthy", "service": "campusमिलन-ai-service"}
 
 @app.post("/api/v1/similarity/text", response_model=TextSimilarityResponse)
 def compute_text_similarity(payload: TextRequest):

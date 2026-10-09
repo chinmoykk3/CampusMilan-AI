@@ -87,7 +87,7 @@ app.use("/api", apiLimiter);
 app.get("/", (req, res) => {
   res.status(200).json({
     success: true,
-    message: "CampusFind AI API",
+    message: "Campusमिलन Ai API",
     version: "1.0.0",
   });
 });
@@ -96,7 +96,7 @@ app.get("/api/health", (req, res) => {
   res.status(200).json({
     success: true,
     status: "healthy",
-    service: "campusfind-ai-backend",
+    service: "campusमिलन-ai-backend",
     timestamp: new Date().toISOString(),
   });
 });

@@ -41,7 +41,7 @@ const Login = () => {
                         <MapPin className="h-6 w-6" />
                     </div>
                     <h2 className="text-3xl font-extrabold text-primary-900 tracking-tight">Welcome Back</h2>
-                    <p className="text-slate-600 mt-2 font-medium">Sign in to your CampusFind account</p>
+                    <p className="text-slate-600 mt-2 font-medium">Sign in to your Campusमिलन account</p>
                 </div>
 
                 {(error || localError) && (

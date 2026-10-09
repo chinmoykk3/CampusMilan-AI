@@ -1,8 +1,8 @@
-# CampusFind-AI: Project Overview
+# Campusमिलन-Ai: Project Overview
 
 ## Primary Objective
 
-The primary objective of CampusFind-AI is to develop an intelligent platform that simplifies the process of reporting, searching, matching, and recovering lost belongings within a campus.
+The primary objective of Campusमिलन-Ai is to develop an intelligent platform that simplifies the process of reporting, searching, matching, and recovering lost belongings within a campus.
 
 - Develop a centralized digital platform for managing lost and found items.
 - Provide secure registration and authentication for students and administrators.
@@ -19,7 +19,7 @@ The primary objective of CampusFind-AI is to develop an intelligent platform tha
 
 ## Methodology
 
-The development of CampusFind-AI will follow a structured software development methodology consisting of the following phases:
+The development of Campusमिलन-Ai will follow a structured software development methodology consisting of the following phases:
 
 1. **Requirement Analysis**
 The requirements of students, administrators, and other campus users will be identified. The major requirements include reporting lost and found items, searching reports, uploading item images, managing reports, and identifying possible matches between lost and found items.
@@ -77,7 +77,7 @@ After successful testing, the system will be prepared for deployment. Logs, erro
 
 ## Conclusion
 
-CampusFind-AI is expected to provide a centralized and intelligent solution for managing lost and found items within educational institutions.
+Campusमिलन-Ai is expected to provide a centralized and intelligent solution for managing lost and found items within educational institutions.
 The system will simplify the reporting process, provide searchable records, and reduce the manual effort required to identify potential matches.
 The major contribution of the proposed system is the integration of multimodal matching, where textual descriptions, images, categories, locations, and time information can collectively contribute to identifying potential matches.
 The system will also provide explainable match results rather than presenting users with an unexplained similarity score. This can help administrators make more informed decisions while retaining human verification for final confirmation.
@@ -94,4 +94,4 @@ The proposed platform can subsequently be extended with:
 - More sophisticated multimodal AI models
 - Analytics for campus authorities
 
-Therefore, CampusFind-AI has the potential to provide a practical, scalable, and intelligent improvement over traditional campus lost-and-found systems.
+Therefore, Campusमिलन-Ai has the potential to provide a practical, scalable, and intelligent improvement over traditional campus lost-and-found systems.

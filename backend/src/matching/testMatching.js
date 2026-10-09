@@ -50,7 +50,7 @@ const runTest = async () => {
         );
 
         console.log(
-            "CAMPUSFIND AI MATCH TEST"
+            "CAMPUSमिलन AI MATCH TEST"
         );
 
         console.log(

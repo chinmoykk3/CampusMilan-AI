@@ -535,7 +535,7 @@ const Dashboard = () => {
                                 <div className="flex items-start justify-between gap-4">
                                     <div>
                                         <p className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-violet-600">
-                                            CampusFind tip
+                                            Campusमिलन tip
                                         </p>
                                         <p className="mt-2 text-sm font-black leading-5 text-slate-900">
                                             Add clear details and locations to improve matching.

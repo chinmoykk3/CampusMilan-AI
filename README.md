@@ -1,6 +1,6 @@
-# CampusFind AI 🎓🤖
+# Campusमिलन Ai 🎓🤖
 
-CampusFind AI is an intelligent, automated Lost and Found platform built specifically for university campuses. It leverages multimodal AI (NLP & Computer Vision) to automatically match lost items with found items based on semantics, images, dates, and locations.
+Campusमिलन Ai is an intelligent, automated Lost and Found platform built specifically for university campuses. It leverages multimodal AI (NLP & Computer Vision) to automatically match lost items with found items based on semantics, images, dates, and locations.
 
 ## Features ✨
 
@@ -21,7 +21,7 @@ CampusFind AI is an intelligent, automated Lost and Found platform built specifi
 ## Folder Structure 📁
 
 ```
-CampusFind-AI/
+Campusमिलन-Ai/
 ├── ai-service/        # Python FastAPI engine (Similarity models)
 ├── backend/           # Node.js backend (Core APIs & Database)
 ├── web/               # React Vite client (User & Admin interfaces)
@@ -63,7 +63,7 @@ The AI service automatically exposes matching algorithms on port `8000`.
 
 ## AI Matching Explanation 🧠
 
-CampusFind-AI avoids trivial keyword searching.
+Campusमिलन-Ai avoids trivial keyword searching.
 When a new item is found, the system compares it against unresolved records. The node wrapper (`matching.service.js`) asynchronously requests semantic vectors from the Python Inference engine and applies a weighted scoring algorithm:
 
 - Text + Metadata: ~45%

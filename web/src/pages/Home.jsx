@@ -67,7 +67,7 @@ const Home = () => {
                         ))
                     ) : (
                         <div className="flex items-center gap-4 mx-4">
-                            <span className="flex items-center gap-2"><Activity className="w-4 h-4 text-emerald-500" /> CampusFind AI Systems Active - Monitoring Campus Activity</span>
+                            <span className="flex items-center gap-2"><Activity className="w-4 h-4 text-emerald-500" /> Campusमिलन Ai Systems Active - Monitoring Campus Activity</span>
                         </div>
                     )}
                 </div>
@@ -102,7 +102,7 @@ const Home = () => {
                                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-900/30 text-[13px] font-semibold text-emerald-700 dark:text-emerald-400 mb-6 shadow-sm border border-emerald-200 dark:border-emerald-800/50"
                             >
                                 <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                                CampusFind AI 2.0 is live
+                                Campusमिलन Ai 2.0 is live
                                 <ChevronRight className="w-3.5 h-3.5" />
                             </motion.div>
 
@@ -245,7 +245,7 @@ const Home = () => {
                             <div className="absolute top-[3%] -right-[6%] md:-right-[10%] z-20 hidden lg:block opacity-90 hover:opacity-100 transition-opacity">
                                 <div className="relative rotate-[6deg]">
                                     <p className="text-[#2F47E8] text-xl font-medium tracking-wide whitespace-nowrap drop-shadow-sm" style={{ fontFamily: '"Architects Daughter", cursive, "Englebert"' }}>
-                                        Lost on campus?<br />Found on CampusFind AI.
+                                        Lost on campus?<br />Found on Campusमिलन Ai.
                                     </p>
                                     <svg className="absolute -bottom-7 right-[80px] w-12 h-16 text-[#2F47E8] transform scale-x-[-1] -rotate-12" viewBox="0 0 50 50" fill="none">
                                         <path d="M40 10 Q 20 15, 10 40" stroke="currentColor" strokeWidth="3" strokeLinecap="round" fill="none" />
@@ -387,7 +387,7 @@ const Home = () => {
                                                     <div className="bg-[#2F47E8] text-white p-1 rounded">
                                                         <MapPin className="w-3.5 h-3.5" />
                                                     </div>
-                                                    <span className="font-bold text-[15px]">CampusFind AI</span>
+                                                    <span className="font-bold text-[15px]">Campusमिलन Ai</span>
                                                 </div>
                                                 <div className="relative">
                                                     <BellRing className="w-[18px] h-[18px] text-stone-600" />
@@ -774,7 +774,7 @@ const Home = () => {
                             Enterprise Security
                         </div>
                         <h2 className="text-3xl sm:text-4xl font-bold mb-4 tracking-tight text-primary-900 dark:text-white">Your data privacy is our baseline.</h2>
-                        <p className="text-lg text-stone-600 max-w-2xl mx-auto font-medium mb-10">We built CampusFind AI specifically for universities, bypassing public peer-to-peer exposure to ensure complete safety during physical handovers.</p>
+                        <p className="text-lg text-stone-600 max-w-2xl mx-auto font-medium mb-10">We built Campusमिलन Ai specifically for universities, bypassing public peer-to-peer exposure to ensure complete safety during physical handovers.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10 max-w-5xl mx-auto">
@@ -901,7 +901,7 @@ const Home = () => {
                                     <MapPin className="h-5 w-5" />
                                 </div>
                                 <span className="font-bold text-2xl tracking-tight text-white font-display">
-                                    Campus<span className="font-medium text-emerald-400">Find AI</span>
+                                    Campus<span className="font-medium text-emerald-400">मिलन-Ai</span>
                                 </span>
                             </div>
                             <p className="text-sm sm:text-base text-zinc-400 max-w-sm leading-relaxed mb-6 font-medium">
@@ -925,13 +925,13 @@ const Home = () => {
                                 <li><Link to="/" onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors focus-visible:outline-none focus-visible:underline">About Us</Link></li>
                                 <li><Link to="/" onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors focus-visible:outline-none focus-visible:underline">Security Protocols</Link></li>
                                 <li><Link to="/" onClick={() => window.scrollTo(0, 0)} className="hover:text-white transition-colors focus-visible:outline-none focus-visible:underline">Privacy Policy</Link></li>
-                                <li><a href="mailto:support@campusfind.com" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:underline">Contact Support</a></li>
+                                <li><a href="mailto:support@campusमिलन.com" className="hover:text-white transition-colors focus-visible:outline-none focus-visible:underline">Contact Support</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="border-t border-stone-200/80 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-medium text-stone-500 text-center md:text-left">
-                        <p>© {new Date().getFullYear()} CampusFind AI. All rights reserved.</p>
+                        <p>© {new Date().getFullYear()} Campusमिलन Ai. All rights reserved.</p>
                         <p>Built securely for universities.</p>
                     </div>
                 </div>

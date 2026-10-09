@@ -107,7 +107,7 @@ const ManageUsers = () => {
                     </div>
                     <div>
                         <h1 className="text-3xl font-extrabold text-primary-900 dark:text-white tracking-tight">Manage Users</h1>
-                        <p className="text-stone-600 dark:text-stone-400 font-medium mt-1">View and manage all registered accounts on CampusFind.</p>
+                        <p className="text-stone-600 dark:text-stone-400 font-medium mt-1">View and manage all registered accounts on Campusमिलन.</p>
                     </div>
                 </div>
 

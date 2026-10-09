@@ -21,7 +21,7 @@ module.exports = {
             },
             colors: {
                 primary: {
-                    500: '#1E3A5F', // Overriding default indigo to CampusFind Institutional Navy
+                    500: '#1E3A5F', // Overriding default indigo to Campusमिलन Institutional Navy
                     600: '#162E4D',
                 },
                 slate: {

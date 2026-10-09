@@ -30,7 +30,7 @@ const newHero = `                {/* Hero Section */}
                                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-900/30 text-[13px] font-semibold text-emerald-700 dark:text-emerald-400 mb-6 shadow-sm border border-emerald-100 dark:border-emerald-800/50"
                             >
                                 <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                                CampusFind 2.0 is live
+                                Campusमिलन 2.0 is live
                                 <ChevronRight className="w-3.5 h-3.5 opacity-60" />
                             </motion.div>
 
@@ -58,7 +58,7 @@ const newHero = `                {/* Hero Section */}
                                 transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
                                 className="text-[17px] sm:text-[18px] leading-[1.6] text-stone-500 dark:text-stone-300 mb-8 max-w-[480px]"
                             >
-                                Report a lost item, submit something you've found, and let CampusFind connect the two. Built for everyday campus life.
+                                Report a lost item, submit something you've found, and let Campusमिलन connect the two. Built for everyday campus life.
                             </motion.p>
 
                             <motion.div
@@ -131,7 +131,7 @@ const newHero = `                {/* Hero Section */}
                             <div className="absolute top-[8%] right-[5%] z-20 hidden md:block">
                                 <div className="relative rotate-[8deg]">
                                     <p className="text-[#3B54F4] text-xl font-medium tracking-wide whitespace-nowrap" style={{ fontFamily:'"Architects Daughter", cursive, "Englebert"' }}>
-                                        Lost on campus?<br/>Found on CampusFind.
+                                        Lost on campus?<br/>Found on Campusमिलन.
                                     </p>
                                     <svg className="absolute -bottom-6 left-12 w-12 h-12 text-[#3B54F4] transform -scale-x-100" viewBox="0 0 50 50" fill="none">
                                         <path d="M40 10 Q 20 20, 10 40" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none"/>
@@ -261,7 +261,7 @@ const newHero = `                {/* Hero Section */}
                                                 <div className="bg-[#3B54F4] text-white p-1 rounded">
                                                     <MapPin className="w-3 h-3" />
                                                 </div>
-                                                <span className="font-bold text-sm">CampusFind</span>
+                                                <span className="font-bold text-sm">Campusमिलन</span>
                                             </div>
                                             <div className="relative">
                                                 <BellRing className="w-5 h-5 text-stone-500" />

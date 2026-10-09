@@ -1,4 +1,4 @@
-# CampusFind AI Service
+# Campusमिलन Ai Service
 
 This microservice provides AI-powered similarity matching using NLP (Sentence Embeddings) and Computer Vision (Image Feature Extraction). It exposes a FastAPI server that the Node.js backend can communicate with for producing advanced multimodal matching scores.
 

@@ -30,7 +30,7 @@ const newHero = `                {/* Hero Section */}
                                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-900/30 text-[13px] font-semibold text-emerald-700 dark:text-emerald-400 mb-6 shadow-sm border border-emerald-200 dark:border-emerald-800/50"
                             >
                                 <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                                CampusFind 2.0 is live
+                                Campusमिलन 2.0 is live
                                 <ChevronRight className="w-3.5 h-3.5" />
                             </motion.div>
 
@@ -58,7 +58,7 @@ const newHero = `                {/* Hero Section */}
                                 transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
                                 className="text-[17px] sm:text-[18px] leading-[1.6] text-stone-500 dark:text-stone-300 mb-8 max-w-[480px]"
                             >
-                                Report a lost item, submit something you've found, and let CampusFind connect the two. Built for everyday campus life.
+                                Report a lost item, submit something you've found, and let Campusमिलन connect the two. Built for everyday campus life.
                             </motion.p>
 
                             <motion.div
@@ -131,7 +131,7 @@ const newHero = `                {/* Hero Section */}
                             <div className="absolute top-[3%] -right-[6%] md:-right-[10%] z-20 hidden lg:block opacity-90 hover:opacity-100 transition-opacity">
                                 <div className="relative rotate-[6deg]">
                                     <p className="text-[#2F47E8] text-xl font-medium tracking-wide whitespace-nowrap drop-shadow-sm" style={{ fontFamily:'"Architects Daughter", cursive, "Englebert"' }}>
-                                        Lost on campus?<br/>Found on CampusFind.
+                                        Lost on campus?<br/>Found on Campusमिलन.
                                     </p>
                                     <svg className="absolute -bottom-7 right-[80px] w-12 h-16 text-[#2F47E8] transform scale-x-[-1] -rotate-12" viewBox="0 0 50 50" fill="none">
                                         <path d="M40 10 Q 20 15, 10 40" stroke="currentColor" strokeWidth="3" strokeLinecap="round" fill="none"/>
@@ -273,7 +273,7 @@ const newHero = `                {/* Hero Section */}
                                                     <div className="bg-[#2F47E8] text-white p-1 rounded">
                                                         <MapPin className="w-3.5 h-3.5" />
                                                     </div>
-                                                    <span className="font-bold text-[15px]">CampusFind</span>
+                                                    <span className="font-bold text-[15px]">Campusमिलन</span>
                                                 </div>
                                                 <div className="relative">
                                                     <BellRing className="w-[18px] h-[18px] text-stone-600" />

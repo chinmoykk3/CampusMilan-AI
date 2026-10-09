@@ -14,8 +14,8 @@ export default defineConfig({
         enabled: true,
       },
       manifest: {
-        name: 'CampusFind AI',
-        short_name: 'CampusFind',
+        name: 'Campusमिलन Ai',
+        short_name: 'Campusमिलन',
         description: 'Intelligent, automated Lost and Found platform',
         theme_color: '#ffffff',
         background_color: '#ffffff',

@@ -28,7 +28,7 @@ const downloadAuditLogs = async (req, res, next) => {
     try {
         const csvString = await exportAuditLogs();
         res.header('Content-Type', 'text/csv');
-        res.attachment('campusfind_ai_telemetry_audit.csv');
+        res.attachment('campusमिलन_ai_telemetry_audit.csv');
         return res.send(csvString);
     } catch (error) {
         next(error);

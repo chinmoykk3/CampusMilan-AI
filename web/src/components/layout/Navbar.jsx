@@ -32,7 +32,7 @@ const Navbar = () => {
                         <MapPin className="h-5 w-5" />
                     </div>
                     <span className="font-bold text-xl sm:text-2xl tracking-tight text-primary-900 dark:text-stone-100 font-display">
-                        Campus<span className="font-medium text-primary-600">Find AI</span>
+                        Campus<span className="font-medium text-primary-600">मिलन-Ai</span>
                     </span>
                 </Link>
 

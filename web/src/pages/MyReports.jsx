@@ -149,7 +149,7 @@ const DetailModal = ({ report, onClose }) => {
                                     <QrCode className="w-3.5 h-3.5" /> Smart Tag
                                 </p>
                                 <p className="text-sm font-medium text-slate-600 leading-snug">
-                                    Print this QR code and attach it to your actual item. If someone scans it, it instantly opens this report page in CampusFind!
+                                    Print this QR code and attach it to your actual item. If someone scans it, it instantly opens this report page in Campusमिलन!
                                 </p>
                             </div>
                             <div className="bg-white p-2 border border-slate-100 rounded-lg shadow-sm flex-shrink-0">

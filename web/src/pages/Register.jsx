@@ -57,7 +57,7 @@ const Register = () => {
                         {step === 3 && 'Verification Complete'}
                     </h2>
                     <p className="text-slate-600 mt-2 font-medium">
-                        {step === 1 && 'Join CampusFind to secure your belongings.'}
+                        {step === 1 && 'Join Campusमिलन to secure your belongings.'}
                         {step === 2 && `A 6-digit code was sent to your email.`}
                         {step === 3 && 'Welcome to the platform.'}
                     </p>

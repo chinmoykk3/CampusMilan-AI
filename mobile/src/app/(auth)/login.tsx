@@ -101,7 +101,7 @@ export default function LoginScreen() {
                                         <Text style={tw`text-indigo-600 text-2xl font-black tracking-tight`}>Login</Text>
                                         <Ionicons name="paper-plane-outline" size={28} color="#8b5cf6" style={tw`absolute right-0 top-0 -rotate-12`} />
                                     </View>
-                                    <Text style={tw`text-slate-500 font-medium text-sm mt-1.5`}>Sign in to your CampusFind account</Text>
+                                    <Text style={tw`text-slate-500 font-medium text-sm mt-1.5`}>Sign in to your Campusमिलन account</Text>
                                 </View>
 
                                 {error && (

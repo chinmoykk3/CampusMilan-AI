@@ -63,7 +63,7 @@ const UserProfile = () => {
                             <div>
                                 <Hexagon className="h-8 w-8 text-indigo-500 mb-2" fill="currentColor" fillOpacity={0.2} />
                                 <span className="font-bold text-xl tracking-tight text-slate-900 font-display">
-                                    Campus<span className="text-indigo-400">Find</span>
+                                    Campus<span className="text-indigo-400">मिलन</span>
                                 </span>
                             </div>
                             <div className="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest flex items-center gap-1.5 shadow-[0_0_15px_rgba(16,185,129,0.3)]">

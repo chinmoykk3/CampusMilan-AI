@@ -391,7 +391,7 @@ const ReportItem = () => {
                                 </motion.div>
                                 <h2 className="text-3xl font-extrabold text-primary-900 mb-3 tracking-tight">Report Logged Successfully</h2>
                                 <p className="text-lg text-slate-600 mb-10 max-w-md font-medium">
-                                    The CampusFind engine is now mapping semantics and tracking your report globally. View live AI matches on your dashboard.
+                                    The Campusमिलन engine is now mapping semantics and tracking your report globally. View live AI matches on your dashboard.
                                 </p>
                                 <button
                                     onClick={() => navigate('/dashboard')}

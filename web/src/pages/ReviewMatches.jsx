@@ -26,7 +26,7 @@ const ReviewMatches = () => {
 
     const generateLocalReport = (match) => {
         const reportContent = `=====================================================
-CAMPUSFIND AI - OFFICIAL MATCH RESOLUTION REPORT
+CAMPUSमिलन AI - OFFICIAL MATCH RESOLUTION REPORT
 =====================================================
 DATE GENERATED: ${new Date().toLocaleString()}
 MATCH ID: ${match._id}
@@ -56,7 +56,7 @@ Both parties have been notified via secure email dispatch.
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `CampusFind_MatchReport_${match._id.slice(-6)}.txt`;
+        a.download = `Campusमिलन_MatchReport_${match._id.slice(-6)}.txt`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);

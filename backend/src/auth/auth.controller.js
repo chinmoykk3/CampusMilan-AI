@@ -24,7 +24,7 @@ const verifyOtp = async (req, res, next) => {
         if (!email || !otp) return res.status(400).json({ success: false, message: "Email and OTP are required." });
 
         const result = await verifyEmailOtp({ email, otp });
-        res.cookie("campusfind_token", result.token, cookieOptions).status(200).json({
+        res.cookie("campusमिलन_token", result.token, cookieOptions).status(200).json({
             success: true,
             message: "Email verified successfully.",
             data: {
@@ -54,7 +54,7 @@ const login = async (req, res, next) => {
         });
 
         res
-            .cookie("campusfind_token", result.token, cookieOptions)
+            .cookie("campusमिलन_token", result.token, cookieOptions)
             .status(200)
             .json({
                 success: true,
@@ -72,7 +72,7 @@ const login = async (req, res, next) => {
 const logout = async (req, res, next) => {
     try {
         res
-            .clearCookie("campusfind_token", {
+            .clearCookie("campusमिलन_token", {
                 httpOnly: true,
                 secure:
                     process.env.NODE_ENV ===
