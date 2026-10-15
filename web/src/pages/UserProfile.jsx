@@ -30,8 +30,8 @@ const UserProfile = () => {
                     <Fingerprint className="w-4 h-4 text-indigo-400" />
                     <span className="text-xs font-semibold uppercase tracking-widest text-indigo-400">Identity Matrix</span>
                 </div>
-                <h1 className="text-5xl font-extrabold text-slate-900 font-display tracking-tight">Security Clearance</h1>
-                <p className="text-slate-500 mt-2">Manage your verified encrypted identity and telemetry access.</p>
+                <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white font-display tracking-tight">Security Clearance</h1>
+                <p className="text-slate-500 dark:text-stone-400 mt-2">Manage your verified encrypted identity and telemetry access.</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -48,7 +48,7 @@ const UserProfile = () => {
                             rotateY: useMotionTemplate`calc(${mouseX} * 1deg)`,
                             transformStyle: "preserve-3d"
                         }}
-                        className="premium-card p-0 h-[400px] w-full flex flex-col justify-between relative group cursor-crosshair overflow-visible border-slate-200"
+                        className="premium-card bg-white dark:bg-stone-900 border border-slate-200 dark:border-stone-800 rounded-2xl p-0 h-[400px] w-full flex flex-col justify-between relative group cursor-crosshair overflow-visible shadow-sm"
                     >
                         {/* Dynamic Holographic Shine */}
                         <motion.div
@@ -59,10 +59,10 @@ const UserProfile = () => {
                         />
 
                         {/* Top ID Header */}
-                        <div className="p-8 border-b border-slate-200 flex justify-between items-start" style={{ transform: "translateZ(30px)" }}>
+                        <div className="p-8 border-b border-slate-200 dark:border-stone-800 flex justify-between items-start" style={{ transform: "translateZ(30px)" }}>
                             <div>
                                 <Hexagon className="h-8 w-8 text-indigo-500 mb-2" fill="currentColor" fillOpacity={0.2} />
-                                <span className="font-bold text-xl tracking-tight text-slate-900 font-display">
+                                <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white font-display">
                                     Campus<span className="text-indigo-400">मिलन</span>
                                 </span>
                             </div>
@@ -78,30 +78,30 @@ const UserProfile = () => {
                                 {/* Photo Avatar Placeholder */}
                                 <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-purple-600/20 border border-indigo-500/30 flex items-center justify-center flex-shrink-0 shadow-[0_0_30px_rgba(99,102,241,0.2)]">
                                     <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex items-center justify-center">
-                                        <span className="text-3xl font-black text-slate-900">{user?.name?.charAt(0)}</span>
+                                        <span className="text-3xl font-black text-white">{user?.name?.charAt(0)}</span>
                                     </div>
                                 </div>
                                 <div className="space-y-1">
                                     <p className="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-1">Operative Handle</p>
-                                    <h2 className="text-2xl font-black text-slate-900 font-display break-all leading-none">
+                                    <h2 className="text-2xl font-black text-slate-900 dark:text-white font-display break-all leading-none">
                                         @{user?.username || user?.name?.split(' ')[0].toLowerCase() + '123'}
                                     </h2>
-                                    <p className="text-sm font-medium text-slate-500 mt-2">{user?.name}</p>
+                                    <p className="text-sm font-medium text-slate-500 dark:text-stone-400 mt-2">{user?.name}</p>
                                 </div>
                             </div>
 
                             <div className="mt-8 space-y-4 font-mono text-sm">
-                                <div className="flex justify-between items-center border-b border-slate-200 pb-2">
-                                    <span className="text-slate-500">AUTH.EMAIL</span>
+                                <div className="flex justify-between items-center border-b border-slate-200 dark:border-stone-800 pb-2">
+                                    <span className="text-slate-500 dark:text-stone-400">AUTH.EMAIL</span>
                                     <span className="text-emerald-400">{user?.email}</span>
                                 </div>
-                                <div className="flex justify-between items-center border-b border-slate-200 pb-2">
-                                    <span className="text-slate-500">ASSIGNED.ROLE</span>
+                                <div className="flex justify-between items-center border-b border-slate-200 dark:border-stone-800 pb-2">
+                                    <span className="text-slate-500 dark:text-stone-400">ASSIGNED.ROLE</span>
                                     <span className="text-indigo-300 uppercase">{user?.role}</span>
                                 </div>
                                 <div className="flex justify-between items-center pb-2">
-                                    <span className="text-slate-500">SECURITY.HASH</span>
-                                    <span className="text-slate-600 truncate max-w-[150px]">{user?.id || '***************'}</span>
+                                    <span className="text-slate-500 dark:text-stone-400">SECURITY.HASH</span>
+                                    <span className="text-slate-600 dark:text-stone-400 truncate max-w-[150px]">{user?.id || user?._id || '***************'}</span>
                                 </div>
                             </div>
                         </div>
@@ -113,32 +113,32 @@ const UserProfile = () => {
 
                 {/* Account Settings Panel */}
                 <div className="flex flex-col gap-6">
-                    <div className="premium-card p-8">
+                    <div className="premium-card bg-white dark:bg-stone-900 border border-slate-200 dark:border-stone-800 rounded-2xl p-8">
                         <div className="flex flex-col gap-4">
-                            <h3 className="text-xl font-display font-bold text-slate-900 flex items-center gap-2 mb-2">
+                            <h3 className="text-xl font-display font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-2">
                                 <Activity className="w-5 h-5 text-indigo-400" /> Account Management
                             </h3>
 
-                            <p className="text-sm text-slate-500 leading-relaxed mb-6">
+                            <p className="text-sm text-slate-500 dark:text-stone-400 leading-relaxed mb-6">
                                 Your account is cryptographically secured. Authentication mechanisms are locked to the primary email vector.
                             </p>
 
-                            <Link to="/report/new" className="premium-button text-center w-full py-3 text-sm font-bold shadow-lg shadow-sm">
+                            <Link to="/report/lost" className="premium-button text-center w-full py-3 text-sm font-bold shadow-lg shadow-sm">
                                 Dispatch New Telemetry Report
                             </Link>
 
-                            <Link to="/my-reports" className="bg-white/5 hover:bg-white/10 border border-slate-200 text-slate-900 text-center w-full py-3 rounded-xl text-sm font-bold transition-all mt-2">
+                            <Link to="/my-reports" className="bg-white dark:bg-stone-800 hover:bg-slate-50 dark:hover:bg-stone-700 border border-slate-200 dark:border-stone-700 text-slate-900 dark:text-white text-center w-full py-3 rounded-xl text-sm font-bold transition-all mt-2">
                                 Access Archived Reports
                             </Link>
                         </div>
                     </div>
 
-                    <div className="premium-card p-6 bg-red-500/5 group">
+                    <div className="premium-card bg-white dark:bg-stone-900 border border-red-200 dark:border-red-900/30 rounded-2xl p-6 bg-red-500/5 group">
                         <h3 className="text-red-400 font-bold uppercase tracking-widest text-xs mb-4">Danger Zone</h3>
-                        <p className="text-sm text-slate-500 mb-6 font-medium">Permanently disconnect your session from the Nexus grid.</p>
+                        <p className="text-sm text-slate-500 dark:text-stone-400 mb-6 font-medium">Permanently disconnect your session from the Nexus grid.</p>
                         <button
                             onClick={logout}
-                            className="bg-red-500/10 hover:bg-red-500 border border-red-500/20 text-red-500 hover:text-slate-900 transition-all rounded-xl py-3 w-full font-bold text-sm"
+                            className="bg-red-500/10 hover:bg-red-500 border border-red-500/20 text-red-500 hover:text-white transition-all rounded-xl py-3 w-full font-bold text-sm"
                         >
                             Terminate Active Session
                         </button>

@@ -5,7 +5,7 @@ const User = require("../models/User");
 
 const authenticate = async (req, res, next) => {
     try {
-        let token = req.cookies?.campusमिलन_token;
+        let token = req.cookies?.campusmilan_token || req.cookies?.campusfind_token || req.cookies?.token;
 
         // Support mobile apps and API clients using:
         // Authorization: Bearer <token>

@@ -45,7 +45,7 @@ const Home = () => {
     return (
         <div className="bg-white dark:bg-stone-950 min-h-screen text-stone-900 dark:text-stone-100 font-sans transition-colors duration-300">
             {/* Announcement Ticker */}
-            <div className="w-full bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-sm border-b border-stone-200/60 dark:border-stone-800/60 text-stone-600 dark:text-stone-400 overflow-hidden whitespace-nowrap py-3 flex items-center justify-start ml-2">
+            <div className="w-full bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-sm border-b border-stone-200/60 dark:border-stone-800/60 text-stone-600 dark:text-stone-400 overflow-hidden whitespace-nowrap py-3 flex items-center justify-start">
                 <div className="animate-marquee flex flex-nowrap items-center text-sm font-medium tracking-wide">
                     {marqueeItems.length > 0 ? (
                         marqueeItems.map((feed, i) => (
@@ -522,39 +522,39 @@ const Home = () => {
                 >
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 w-full">
                         <motion.div whileHover={{ y: -4, scale: 1.02 }} className="flex flex-col md:flex-row items-center gap-3 cursor-pointer hover:bg-white dark:hover:bg-stone-900 p-6 rounded-2xl transition-all duration-300 shadow-sm hover:shadow-[0_15px_30px_-5px_rgba(0,0,0,0.1)] md:text-left text-center border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
-                            <div className="w-10 h-10 shrink-0 rounded-full bg-indigo-50 border border-indigo-100 flex items-center justify-center">
+                            <div className="w-10 h-10 shrink-0 rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-800/40 flex items-center justify-center">
                                 <span className="text-indigo-600 font-bold block text-lg">🧠</span>
                             </div>
                             <div>
-                                <h3 className="text-[13px] font-bold text-stone-900">AI-Powered Matching</h3>
-                                <p className="text-[11px] text-stone-500 mt-0.5">Finds the right match using semantic search.</p>
+                                <h3 className="text-[13px] font-bold text-stone-900 dark:text-stone-100">AI-Powered Matching</h3>
+                                <p className="text-[11px] text-stone-500 dark:text-stone-400 mt-0.5">Finds the right match using semantic search.</p>
                             </div>
                         </motion.div>
                         <motion.div whileHover={{ y: -4, scale: 1.02 }} className="flex flex-col md:flex-row items-center gap-3 cursor-pointer hover:bg-white dark:hover:bg-stone-900 p-6 rounded-2xl transition-all duration-300 shadow-sm hover:shadow-[0_15px_30px_-5px_rgba(0,0,0,0.1)] md:text-left text-center border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
-                            <div className="w-10 h-10 shrink-0 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center">
+                            <div className="w-10 h-10 shrink-0 rounded-full bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-100 dark:border-emerald-800/40 flex items-center justify-center">
                                 <ShieldCheck className="w-5 h-5 text-emerald-600" />
                             </div>
                             <div>
-                                <h3 className="text-[13px] font-bold text-stone-900">Safe & Secure</h3>
-                                <p className="text-[11px] text-stone-500 mt-0.5">Privacy-first and verified campus community.</p>
+                                <h3 className="text-[13px] font-bold text-stone-900 dark:text-stone-100">Safe & Secure</h3>
+                                <p className="text-[11px] text-stone-500 dark:text-stone-400 mt-0.5">Privacy-first and verified campus community.</p>
                             </div>
                         </motion.div>
                         <motion.div whileHover={{ y: -4, scale: 1.02 }} className="flex flex-col md:flex-row items-center gap-3 cursor-pointer hover:bg-white dark:hover:bg-stone-900 p-6 rounded-2xl transition-all duration-300 shadow-sm hover:shadow-[0_15px_30px_-5px_rgba(0,0,0,0.1)] md:text-left text-center border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
-                            <div className="w-10 h-10 shrink-0 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center">
+                            <div className="w-10 h-10 shrink-0 rounded-full bg-blue-50 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-800/40 flex items-center justify-center">
                                 <User className="w-5 h-5 text-blue-600" />
                             </div>
                             <div>
-                                <h3 className="text-[13px] font-bold text-stone-900">Campus Community</h3>
-                                <p className="text-[11px] text-stone-500 mt-0.5">Built for students, by students.</p>
+                                <h3 className="text-[13px] font-bold text-stone-900 dark:text-stone-100">Campus Community</h3>
+                                <p className="text-[11px] text-stone-500 dark:text-stone-400 mt-0.5">Built for students, by students.</p>
                             </div>
                         </motion.div>
                         <motion.div whileHover={{ y: -4, scale: 1.02 }} className="flex flex-col md:flex-row items-center gap-3 cursor-pointer hover:bg-white dark:hover:bg-stone-900 p-6 rounded-2xl transition-all duration-300 shadow-sm hover:shadow-[0_15px_30px_-5px_rgba(0,0,0,0.1)] md:text-left text-center border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
-                            <div className="w-10 h-10 shrink-0 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center">
+                            <div className="w-10 h-10 shrink-0 rounded-full bg-orange-50 dark:bg-orange-950/40 border border-orange-100 dark:border-orange-800/40 flex items-center justify-center">
                                 <Activity className="w-5 h-5 text-orange-600" />
                             </div>
                             <div>
-                                <h3 className="text-[13px] font-bold text-stone-900">Fast Recovery</h3>
-                                <p className="text-[11px] text-stone-500 mt-0.5">Report, match, and reunite in minutes.</p>
+                                <h3 className="text-[13px] font-bold text-stone-900 dark:text-stone-100">Fast Recovery</h3>
+                                <p className="text-[11px] text-stone-500 dark:text-stone-400 mt-0.5">Report, match, and reunite in minutes.</p>
                             </div>
                         </motion.div>
                     </div>
@@ -588,7 +588,7 @@ const Home = () => {
                                 <MapPin className="w-64 h-64 text-primary-900" />
                             </motion.div>
 
-                            <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center mb-6 border border-stone-200 shadow-sm group-hover:scale-110 transition-transform">
+                            <div className="w-12 h-12 rounded-lg bg-white dark:bg-stone-800 flex items-center justify-center mb-6 border border-stone-200 dark:border-stone-700 shadow-sm group-hover:scale-110 transition-transform">
                                 <MapPin className="w-6 h-6 text-primary-600" />
                             </div>
                             <div className="relative z-10 max-w-xl">
@@ -609,8 +609,8 @@ const Home = () => {
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                                 className="bg-white dark:bg-[#09090b] rounded-[28px] p-8 flex-1 flex flex-col justify-center border border-stone-200/80 dark:border-stone-800/80 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-5px_rgba(0,0,0,0.1)] cursor-pointer group transition-all duration-500 hover:-translate-y-1"
                             >
-                                <div className="w-10 h-10 rounded-lg bg-stone-50 flex items-center justify-center mb-5 border border-stone-100 group-hover:bg-stone-100 transition-colors">
-                                    <ShieldCheck className="w-5 h-5 text-stone-700" />
+                                <div className="w-10 h-10 rounded-lg bg-stone-50 dark:bg-stone-800 flex items-center justify-center mb-5 border border-stone-100 dark:border-stone-700 group-hover:bg-stone-100 dark:group-hover:bg-stone-700 transition-colors">
+                                    <ShieldCheck className="w-5 h-5 text-stone-700 dark:text-stone-300" />
                                 </div>
                                 <h3 className="text-lg font-bold text-stone-900 dark:text-stone-100 mb-2">Verified Return</h3>
                                 <p className="text-[14px] text-stone-600 dark:text-stone-400 leading-relaxed">
@@ -623,8 +623,8 @@ const Home = () => {
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                                 className="bg-white dark:bg-[#09090b] rounded-[28px] p-8 flex-1 flex flex-col justify-center border border-stone-200/80 dark:border-stone-800/80 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-5px_rgba(0,0,0,0.1)] cursor-pointer group transition-all duration-500 hover:-translate-y-1"
                             >
-                                <div className="w-10 h-10 rounded-lg bg-stone-50 flex items-center justify-center mb-5 border border-stone-100 group-hover:bg-stone-100 transition-colors">
-                                    <BellRing className="w-5 h-5 text-stone-700 group-hover:animate-bounce" />
+                                <div className="w-10 h-10 rounded-lg bg-stone-50 dark:bg-stone-800 flex items-center justify-center mb-5 border border-stone-100 dark:border-stone-700 group-hover:bg-stone-100 dark:group-hover:bg-stone-700 transition-colors">
+                                    <BellRing className="w-5 h-5 text-stone-700 dark:text-stone-300 group-hover:animate-bounce" />
                                 </div>
                                 <h3 className="text-lg font-bold text-stone-900 dark:text-stone-100 mb-2">Instant Alerts</h3>
                                 <p className="text-[14px] text-stone-600 dark:text-stone-400 leading-relaxed">
@@ -661,7 +661,7 @@ const Home = () => {
                                 <div className="w-full pl-0 sm:pl-16 flex justify-between items-end">
                                     <div className="flex gap-6 text-sm font-semibold text-stone-500 dark:text-stone-400">
                                         <button
-                                            className={`pb-4 -mb-4 border-b-2 transition-colors ${activeTab === 'lost' ? 'border-primary-600 text-primary-900' : 'border-transparent hover:text-stone-800'}`}
+                                            className={`pb-4 -mb-4 border-b-2 transition-colors ${activeTab === 'lost' ? 'border-primary-600 text-primary-900 dark:text-white' : 'border-transparent hover:text-stone-800 dark:hover:text-white'}`}
                                             onClick={() => setActiveTab('lost')}
                                         >
                                             My Lost Items
@@ -726,29 +726,29 @@ const Home = () => {
                                         </div>
                                     </div>
                                 ) : (
-                                    <div className="bg-white p-6 rounded-xl border border-primary-200 shadow-sm flex flex-col md:flex-row gap-6 items-start">
+                                    <div className="bg-white dark:bg-stone-900/60 p-6 rounded-xl border border-primary-200 dark:border-stone-700 shadow-sm flex flex-col md:flex-row gap-6 items-start">
                                         <div className="flex-1 w-full space-y-4">
                                             <div className="flex justify-between items-start">
-                                                <h4 className="font-bold text-lg text-primary-900 border-b-2 border-emerald-200 pb-1 inline-block">High Confidence Match</h4>
-                                                <span className="px-2 py-1 rounded bg-primary-50 text-primary-700 text-xs font-bold border border-primary-100">AI Confidence: 96%</span>
+                                                <h4 className="font-bold text-lg text-primary-900 dark:text-white border-b-2 border-emerald-200 dark:border-emerald-700 pb-1 inline-block">High Confidence Match</h4>
+                                                <span className="px-2 py-1 rounded bg-primary-50 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-xs font-bold border border-primary-100 dark:border-primary-800/50">AI Confidence: 96%</span>
                                             </div>
 
                                             <div className="grid grid-cols-2 gap-4 text-sm mt-4">
-                                                <div className="p-3 bg-stone-50 rounded-lg border border-stone-100">
-                                                    <span className="text-xs text-stone-500 font-semibold block mb-1">Your Report</span>
-                                                    <p className="font-medium text-primary-900">"Lost my Student ID card near the dining hall."</p>
+                                                <div className="p-3 bg-stone-50 dark:bg-stone-800/60 rounded-lg border border-stone-100 dark:border-stone-700">
+                                                    <span className="text-xs text-stone-500 dark:text-stone-400 font-semibold block mb-1">Your Report</span>
+                                                    <p className="font-medium text-primary-900 dark:text-stone-200">"Lost my Student ID card near the dining hall."</p>
                                                 </div>
-                                                <div className="p-3 bg-stone-50 rounded-lg border border-stone-100">
-                                                    <span className="text-xs text-stone-500 font-semibold block mb-1">Found Item</span>
-                                                    <p className="font-medium text-primary-900">"Found ID card on table 4 at Student Union Dining."</p>
+                                                <div className="p-3 bg-stone-50 dark:bg-stone-800/60 rounded-lg border border-stone-100 dark:border-stone-700">
+                                                    <span className="text-xs text-stone-500 dark:text-stone-400 font-semibold block mb-1">Found Item</span>
+                                                    <p className="font-medium text-primary-900 dark:text-stone-200">"Found ID card on table 4 at Student Union Dining."</p>
                                                 </div>
                                             </div>
 
-                                            <div className="mt-4 p-3 bg-blue-50 border border-blue-100 rounded-lg flex items-start gap-3">
+                                            <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-800/40 rounded-lg flex items-start gap-3">
                                                 <AlertCircle className="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
                                                 <div>
-                                                    <p className="text-sm font-semibold text-primary-900">Item secured at Admin Desk</p>
-                                                    <p className="text-xs text-stone-600 mt-1">Please visit the Main Student Union Desk with a secondary form of ID to retrieve your item.</p>
+                                                    <p className="text-sm font-semibold text-primary-900 dark:text-white">Item secured at Admin Desk</p>
+                                                    <p className="text-xs text-stone-600 dark:text-stone-400 mt-1">Please visit the Main Student Union Desk with a secondary form of ID to retrieve your item.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -806,49 +806,49 @@ const Home = () => {
                     className="w-full scroll-mt-24"
                 >
                     <div className="text-center mb-10 sm:mb-14">
-                        <h2 className="text-3xl sm:text-4xl font-extrabold text-primary-900 tracking-tight mb-4">Trusted Across Campuses</h2>
-                        <p className="text-lg text-stone-600 max-w-2xl mx-auto font-medium">See how students and security teams rely on the matching engine.</p>
+                        <h2 className="text-3xl sm:text-4xl font-extrabold text-primary-900 dark:text-white tracking-tight mb-4">Trusted Across Campuses</h2>
+                        <p className="text-lg text-stone-600 dark:text-stone-400 max-w-2xl mx-auto font-medium">See how students and security teams rely on the matching engine.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <motion.div whileHover={{ y: -6, scale: 1.02 }} className="premium-card bg-white dark:bg-stone-950 p-10 border border-stone-200 dark:border-stone-800 group cursor-pointer shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 rounded-[32px] hover:-translate-y-2 min-h-[250px]">
-                            <div className="flex text-stone-200 dark:text-stone-800 mb-4 font-bold tracking-[0.1em] text-lg">
+                            <div className="flex text-amber-400 mb-4 font-bold tracking-[0.1em] text-lg">
                                 ★★★★★
                             </div>
-                            <p className="text-stone-700 font-medium leading-relaxed mb-6 group-hover:text-stone-900"></p>
+                            <p className="text-stone-700 dark:text-stone-300 font-medium leading-relaxed mb-6 group-hover:text-stone-900 dark:group-hover:text-white">"Lost my laptop charger during exam week — absolute panic. Reported it on Campusमिलन Ai and within 3 hours someone had already turned it in at the library desk. The AI match notification was instant."</p>
                             <div className="flex items-center gap-3 mt-auto">
-                                <div className="w-10 h-10 bg-stone-50 dark:bg-stone-900 rounded-full flex items-center justify-center font-bold text-transparent"></div>
+                                <div className="w-10 h-10 bg-indigo-100 dark:bg-indigo-900/40 rounded-full flex items-center justify-center font-bold text-indigo-600 dark:text-indigo-400 text-sm">A</div>
                                 <div>
-                                    <h4 className="text-sm font-bold text-primary-900"></h4>
-                                    <p className="text-xs text-stone-500 font-semibold"></p>
+                                    <h4 className="text-sm font-bold text-primary-900 dark:text-white">Ananya Sharma</h4>
+                                    <p className="text-xs text-stone-500 dark:text-stone-400 font-semibold">B.Tech CSE • 3rd Year</p>
                                 </div>
                             </div>
                         </motion.div>
 
                         <motion.div whileHover={{ y: -6, scale: 1.02 }} className="premium-card bg-white dark:bg-stone-950 p-10 border border-stone-200 dark:border-stone-800 group cursor-pointer shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 rounded-[32px] hover:-translate-y-2 min-h-[250px]">
-                            <div className="flex text-stone-200 dark:text-stone-800 mb-4 font-bold tracking-[0.1em] text-lg">
+                            <div className="flex text-amber-400 mb-4 font-bold tracking-[0.1em] text-lg">
                                 ★★★★★
                             </div>
-                            <p className="text-stone-700 font-medium leading-relaxed mb-6 group-hover:text-stone-900"></p>
+                            <p className="text-stone-700 dark:text-stone-300 font-medium leading-relaxed mb-6 group-hover:text-stone-900 dark:group-hover:text-white">"As campus security, this platform transformed how we handle lost items. Previously we'd have piles of unclaimed stuff — now the AI matching connects items to owners before they even reach us. Recovery rate went from ~30% to over 85%."</p>
                             <div className="flex items-center gap-3 mt-auto">
-                                <div className="w-10 h-10 bg-stone-50 dark:bg-stone-900 rounded-full flex items-center justify-center font-bold text-transparent"></div>
+                                <div className="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/40 rounded-full flex items-center justify-center font-bold text-emerald-600 dark:text-emerald-400 text-sm">R</div>
                                 <div>
-                                    <h4 className="text-sm font-bold text-primary-900"></h4>
-                                    <p className="text-xs text-stone-500 font-semibold"></p>
+                                    <h4 className="text-sm font-bold text-primary-900 dark:text-white">Rajesh Kumar</h4>
+                                    <p className="text-xs text-stone-500 dark:text-stone-400 font-semibold">Head of Campus Security</p>
                                 </div>
                             </div>
                         </motion.div>
 
                         <motion.div whileHover={{ y: -6, scale: 1.02 }} className="premium-card bg-white dark:bg-stone-950 p-10 border border-stone-200 dark:border-stone-800 group cursor-pointer shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 rounded-[32px] hover:-translate-y-2 min-h-[250px]">
-                            <div className="flex text-stone-200 dark:text-stone-800 mb-4 font-bold tracking-[0.1em] text-lg">
+                            <div className="flex text-amber-400 mb-4 font-bold tracking-[0.1em] text-lg">
                                 ★★★★★
                             </div>
-                            <p className="text-stone-700 font-medium leading-relaxed mb-6 group-hover:text-stone-900"></p>
+                            <p className="text-stone-700 dark:text-stone-300 font-medium leading-relaxed mb-6 group-hover:text-stone-900 dark:group-hover:text-white">"Someone found my student ID card in a completely different building. The semantic matching figured out it was mine based on my description alone — no photo needed. Got it back the same day from the admin desk. Genuinely impressed."</p>
                             <div className="flex items-center gap-3 mt-auto">
-                                <div className="w-10 h-10 bg-stone-50 dark:bg-stone-900 rounded-full flex items-center justify-center font-bold text-transparent"></div>
+                                <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900/40 rounded-full flex items-center justify-center font-bold text-purple-600 dark:text-purple-400 text-sm">P</div>
                                 <div>
-                                    <h4 className="text-sm font-bold text-primary-900"></h4>
-                                    <p className="text-xs text-stone-500 font-semibold"></p>
+                                    <h4 className="text-sm font-bold text-primary-900 dark:text-white">Priya Mehta</h4>
+                                    <p className="text-xs text-stone-500 dark:text-stone-400 font-semibold">MBA • 1st Year</p>
                                 </div>
                             </div>
                         </motion.div>
@@ -858,18 +858,18 @@ const Home = () => {
                 {/* FAQs Section */}
                 <section className="max-w-3xl mx-auto w-full px-2 sm:px-0">
                     <div className="text-center mb-8 sm:mb-12">
-                        <h2 className="text-3xl font-bold text-primary-900 tracking-tight">Frequently Asked Questions</h2>
+                        <h2 className="text-3xl font-bold text-primary-900 dark:text-white tracking-tight">Frequently Asked Questions</h2>
                     </div>
                     <div className="flex flex-col gap-3">
                         {faqs.map((faq, index) => (
-                            <div key={index} className="premium-card bg-white border border-stone-200 overflow-hidden text-left">
+                            <div key={index} className="premium-card bg-white dark:bg-stone-950 border border-stone-200 dark:border-stone-800 overflow-hidden text-left rounded-2xl">
                                 <button
-                                    className="w-full p-5 sm:p-6 flex justify-between items-center text-left bg-white hover:bg-stone-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-inset"
+                                    className="w-full p-5 sm:p-6 flex justify-between items-center text-left bg-white dark:bg-stone-950 hover:bg-stone-50 dark:hover:bg-stone-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-inset rounded-2xl"
                                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                                     aria-expanded={openFaq === index}
                                 >
-                                    <h3 className="font-semibold text-primary-900 text-[15px] sm:text-base pr-4">{faq.q}</h3>
-                                    <ChevronDown className={`w-5 h-5 text-stone-500 shrink-0 transition-transform duration-300 ${openFaq === index ? 'rotate-180' : ''}`} />
+                                    <h3 className="font-semibold text-primary-900 dark:text-stone-100 text-[15px] sm:text-base pr-4">{faq.q}</h3>
+                                    <ChevronDown className={`w-5 h-5 text-stone-500 dark:text-stone-400 shrink-0 transition-transform duration-300 ${openFaq === index ? 'rotate-180' : ''}`} />
                                 </button>
                                 <AnimatePresence>
                                     {openFaq === index && (
@@ -877,7 +877,7 @@ const Home = () => {
                                             initial={{ height: 0, opacity: 0 }}
                                             animate={{ height: "auto", opacity: 1 }}
                                             exit={{ height: 0, opacity: 0 }}
-                                            className="px-5 sm:px-6 pb-5 sm:pb-6 text-[14px] sm:text-[15px] font-medium text-stone-600 leading-relaxed bg-white"
+                                            className="px-5 sm:px-6 pb-5 sm:pb-6 text-[14px] sm:text-[15px] font-medium text-stone-600 dark:text-stone-400 leading-relaxed bg-white dark:bg-stone-950"
                                         >
                                             <div className="pt-2">
                                                 {faq.a}
@@ -930,7 +930,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="border-t border-stone-200/80 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-medium text-stone-500 text-center md:text-left">
+                    <div className="border-t border-zinc-700/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-medium text-zinc-500 text-center md:text-left">
                         <p>© {new Date().getFullYear()} Campusमिलन Ai. All rights reserved.</p>
                         <p>Built securely for universities.</p>
                     </div>

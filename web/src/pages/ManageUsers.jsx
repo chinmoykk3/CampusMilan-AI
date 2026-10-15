@@ -114,19 +114,19 @@ const ManageUsers = () => {
                 {/* Global Search */}
                 <div className="relative w-full md:w-72">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                        <Search className="h-5 w-5 text-stone-400" />
+                        <Search className="h-4 w-4 text-stone-400" />
                     </div>
                     <input
                         type="text"
                         value={globalFilter}
                         onChange={e => setGlobalFilter(e.target.value)}
                         placeholder="Search users..."
-                        className="pl-10 block w-full border-stone-200 rounded-lg dark:bg-stone-900 dark:border-stone-800 dark:text-white sm:text-sm focus:ring-primary-500 focus:border-primary-500"
+                        className="pl-10 pr-4 py-2 block w-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-xl text-sm font-medium text-stone-800 dark:text-white placeholder:text-stone-400 outline-none focus:ring-2 focus:ring-primary-500 transition-colors"
                     />
                 </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="bg-white dark:bg-[#09090b] rounded-2xl shadow-sm border border-stone-200 dark:border-stone-800 overflow-hidden transition-colors">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="bg-white dark:bg-stone-900 rounded-2xl shadow-sm border border-stone-200 dark:border-stone-800 overflow-hidden transition-colors">
                 <div className="overflow-x-auto min-h-[400px]">
                     <table className="w-full text-left border-collapse min-w-max">
                         <thead>

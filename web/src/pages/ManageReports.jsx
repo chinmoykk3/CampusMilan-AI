@@ -26,14 +26,14 @@ const columnHelper = createColumnHelper();
 /* ─────────────────────────────────────────────────────────────── */
 const StatusBadge = ({ status }) => {
     const map = {
-        active: { cls: 'bg-amber-50 text-amber-700 border-amber-200', label: 'Review' },
-        resolved: { cls: 'bg-green-50 text-green-700 border-green-200', label: 'Closed' },
-        removed: { cls: 'bg-rose-50  text-rose-700  border-rose-200', label: 'Dismissed' },
-        closed: { cls: 'bg-slate-100 text-slate-600 border-slate-200', label: 'Closed' },
+        active: { cls: 'bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-800/60', label: 'Review' },
+        resolved: { cls: 'bg-green-50 dark:bg-green-950/40 text-green-700 dark:text-green-400 border-green-200 dark:border-green-800/60', label: 'Closed' },
+        removed: { cls: 'bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-400 border-rose-200 dark:border-rose-800/60', label: 'Dismissed' },
+        closed: { cls: 'bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 border-stone-200 dark:border-stone-700', label: 'Closed' },
     };
-    const { cls, label } = map[status] || { cls: 'bg-slate-100 text-slate-500 border-slate-200', label: status };
+    const { cls, label } = map[status] || { cls: 'bg-stone-100 dark:bg-stone-800 text-stone-500 dark:text-stone-400 border-stone-200 dark:border-stone-700', label: status };
     return (
-        <span className={`px-3 py-1 border font-extrabold text-[10px] tracking-widest uppercase rounded-md ${cls}`}>
+        <span className={`px-2.5 py-1 border font-extrabold text-[10px] tracking-widest uppercase rounded-md ${cls}`}>
             {label}
         </span>
     );
@@ -49,13 +49,13 @@ const ReportDetailModal = ({ report, onClose, onStatusChange, actionLoading }) =
     const images = report.images || [];
 
     const Field = ({ icon: Icon, label, value }) => (
-        <div className="flex items-start gap-3 py-3 border-b border-slate-100 last:border-0">
+        <div className="flex items-start gap-3 py-3 border-b border-slate-100 dark:border-stone-800/60 last:border-0">
             <div className="mt-0.5 text-primary-500">
                 <Icon className="w-4 h-4" />
             </div>
             <div className="flex-1 min-w-0">
-                <p className="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 mb-0.5">{label}</p>
-                <p className="text-sm font-semibold text-slate-800 break-words">{value || '—'}</p>
+                <p className="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 dark:text-stone-500 mb-0.5">{label}</p>
+                <p className="text-sm font-semibold text-slate-800 dark:text-stone-200 break-words">{value || '—'}</p>
             </div>
         </div>
     );
@@ -68,7 +68,7 @@ const ReportDetailModal = ({ report, onClose, onStatusChange, actionLoading }) =
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40"
+                className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40"
                 onClick={onClose}
             />
 
@@ -79,25 +79,25 @@ const ReportDetailModal = ({ report, onClose, onStatusChange, actionLoading }) =
                 animate={{ x: 0 }}
                 exit={{ x: '100%' }}
                 transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-                className="fixed top-0 right-0 h-full w-full max-w-lg bg-white shadow-2xl z-50 flex flex-col overflow-hidden"
+                className="fixed top-0 right-0 h-full w-full max-w-lg bg-white dark:bg-stone-900 text-slate-900 dark:text-stone-100 shadow-2xl z-50 flex flex-col overflow-hidden border-l border-transparent dark:border-stone-800"
             >
                 {/* Header */}
-                <div className="flex items-start justify-between p-6 border-b border-slate-100 bg-slate-50">
+                <div className="flex items-start justify-between p-6 border-b border-slate-100 dark:border-stone-800 bg-slate-50 dark:bg-stone-900/90">
                     <div>
                         <div className="flex items-center gap-2 mb-1">
-                            <span className={`text-[10px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded ${report.type === 'lost' ? 'bg-amber-100 text-amber-700' : 'bg-green-100 text-green-700'}`}>
+                            <span className={`text-[10px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded ${report.type === 'lost' ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400' : 'bg-green-100 dark:bg-green-950/60 text-green-700 dark:text-green-400'}`}>
                                 {report.type}
                             </span>
                             <StatusBadge status={report.status} />
                         </div>
-                        <h2 className="text-xl font-extrabold text-primary-900 mt-1">{report.itemName}</h2>
-                        <p className="text-xs text-slate-500 font-medium mt-0.5">
-                            Case ID: <span className="font-mono text-slate-700">{report._id}</span>
+                        <h2 className="text-xl font-extrabold text-primary-900 dark:text-white mt-1">{report.itemName}</h2>
+                        <p className="text-xs text-slate-500 dark:text-stone-400 font-medium mt-0.5">
+                            Case ID: <span className="font-mono text-slate-700 dark:text-stone-300">{report._id}</span>
                         </p>
                     </div>
                     <button
                         onClick={onClose}
-                        className="p-2 rounded-xl bg-white border border-slate-200 text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors shadow-sm"
+                        className="p-2 rounded-xl bg-white dark:bg-stone-800 border border-slate-200 dark:border-stone-700 text-slate-500 dark:text-stone-400 hover:text-slate-800 dark:hover:text-stone-200 hover:bg-slate-100 dark:hover:bg-stone-700 transition-colors shadow-sm"
                     >
                         <X className="w-5 h-5" />
                     </button>
@@ -109,7 +109,7 @@ const ReportDetailModal = ({ report, onClose, onStatusChange, actionLoading }) =
                     {/* Images */}
                     {images.length > 0 && (
                         <div>
-                            <p className="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 mb-3 flex items-center gap-1.5">
+                            <p className="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 dark:text-stone-500 mb-3 flex items-center gap-1.5">
                                 <ImageIcon className="w-3.5 h-3.5" /> Evidence / Photos ({images.length})
                             </p>
                             <div className="grid grid-cols-2 gap-3">
@@ -119,7 +119,7 @@ const ReportDetailModal = ({ report, onClose, onStatusChange, actionLoading }) =
                                         href={`${backendBase}${img.url}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="relative group rounded-xl overflow-hidden border border-slate-200 bg-slate-50 aspect-square block"
+                                        className="relative group rounded-xl overflow-hidden border border-slate-200 dark:border-stone-700 bg-slate-50 dark:bg-stone-800 aspect-square block"
                                     >
                                         <img
                                             src={`${backendBase}${img.url}`}
@@ -140,23 +140,23 @@ const ReportDetailModal = ({ report, onClose, onStatusChange, actionLoading }) =
                     )}
 
                     {images.length === 0 && (
-                        <div className="flex flex-col items-center justify-center py-6 bg-slate-50 rounded-xl border border-dashed border-slate-200">
-                            <ImageIcon className="w-8 h-8 text-slate-300 mb-2" />
-                            <p className="text-xs font-semibold text-slate-400">No photos uploaded</p>
+                        <div className="flex flex-col items-center justify-center py-6 bg-slate-50 dark:bg-stone-800/40 rounded-xl border border-dashed border-slate-200 dark:border-stone-800">
+                            <ImageIcon className="w-8 h-8 text-slate-300 dark:text-stone-600 mb-2" />
+                            <p className="text-xs font-semibold text-slate-400 dark:text-stone-500">No photos uploaded</p>
                         </div>
                     )}
 
                     {/* Reporter Info */}
-                    <div className="bg-primary-50 border border-primary-100 rounded-xl p-4">
-                        <p className="text-[10px] font-extrabold uppercase tracking-widest text-primary-400 mb-3 flex items-center gap-1.5">
+                    <div className="bg-primary-50 dark:bg-stone-800/60 border border-primary-100 dark:border-stone-750 rounded-xl p-4">
+                        <p className="text-[10px] font-extrabold uppercase tracking-widest text-primary-600 dark:text-primary-400 mb-2 flex items-center gap-1.5">
                             <User className="w-3.5 h-3.5" /> Reporter Details
                         </p>
-                        <p className="text-sm font-bold text-primary-900">{report.userId?.name || 'Unknown'}</p>
-                        <p className="text-xs font-semibold text-primary-600 mt-0.5">{report.userId?.email || 'No email'}</p>
+                        <p className="text-sm font-bold text-primary-900 dark:text-white">{report.userId?.name || 'Unknown'}</p>
+                        <p className="text-xs font-semibold text-primary-600 dark:text-primary-400 mt-0.5">{report.userId?.email || 'No email'}</p>
                     </div>
 
                     {/* Core Fields */}
-                    <div className="bg-white border border-slate-100 rounded-xl overflow-hidden">
+                    <div className="bg-white dark:bg-stone-800/40 border border-slate-100 dark:border-stone-800 rounded-xl px-4 overflow-hidden">
                         <Field icon={FileText} label="Description" value={report.description} />
                         <Field icon={Tag} label="Category" value={report.categoryId?.name} />
                         <Field
@@ -176,23 +176,23 @@ const ReportDetailModal = ({ report, onClose, onStatusChange, actionLoading }) =
                     </div>
 
                     {/* Timestamps */}
-                    <div className="text-xs text-slate-400 font-medium space-y-1 pt-2">
+                    <div className="text-xs text-slate-400 dark:text-stone-500 font-medium space-y-1 pt-2">
                         <p>Filed: {new Date(report.createdAt).toLocaleString('en-IN')}</p>
                         {report.updatedAt !== report.createdAt && (
                             <p>Last updated: {new Date(report.updatedAt).toLocaleString('en-IN')}</p>
                         )}
                     </div>
 
-                    {/* PHYSICAL SMART TAG FOR ADMIMS */}
-                    <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex gap-4 mt-6 print-this">
-                        <div className="bg-white p-2 rounded-lg">
+                    {/* PHYSICAL SMART TAG FOR ADMINS */}
+                    <div className="bg-slate-900 dark:bg-stone-950 border border-slate-800 dark:border-stone-800 rounded-xl p-4 flex gap-4 mt-6 print-this">
+                        <div className="bg-white p-2 rounded-lg shrink-0">
                             <QRCode value={`${window.location.origin}/report/${report._id}`} size={64} />
                         </div>
                         <div>
-                            <p className="text-[10px] font-extrabold text-blue-400 uppercase tracking-widest flex items-center gap-1.5 mb-1">
+                            <p className="text-[10px] font-extrabold text-blue-400 dark:text-blue-300 uppercase tracking-widest flex items-center gap-1.5 mb-1">
                                 <QrCode className="w-3.5 h-3.5" /> Inventory Smart Tag
                             </p>
-                            <p className="text-xs text-slate-300 font-medium leading-relaxed">
+                            <p className="text-xs text-slate-300 dark:text-stone-300 font-medium leading-relaxed">
                                 Print this tag and attach it to the physical item in your locker. Users can scan it offline to instantly pull up this asset.
                             </p>
                         </div>
@@ -200,12 +200,12 @@ const ReportDetailModal = ({ report, onClose, onStatusChange, actionLoading }) =
                 </div>
 
                 {/* Footer — action buttons */}
-                <div className="p-4 border-t border-slate-100 bg-slate-50 flex flex-wrap gap-2">
+                <div className="p-4 border-t border-slate-100 dark:border-stone-800 bg-slate-50 dark:bg-stone-900/90 flex flex-wrap gap-2">
                     {report.status !== 'active' && (
                         <button
                             disabled={actionLoading === report._id}
                             onClick={() => onStatusChange(report._id, 'active')}
-                            className="flex-1 px-3 py-2.5 rounded-xl bg-amber-50 text-amber-700 border border-amber-200 hover:bg-amber-100 text-xs font-extrabold uppercase tracking-wider transition-colors disabled:opacity-50"
+                            className="flex-1 px-3 py-2.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-800 hover:bg-amber-100 dark:hover:bg-amber-900/50 text-xs font-extrabold uppercase tracking-wider transition-colors disabled:opacity-50"
                         >
                             Set Active
                         </button>
@@ -214,7 +214,7 @@ const ReportDetailModal = ({ report, onClose, onStatusChange, actionLoading }) =
                         <button
                             disabled={actionLoading === report._id}
                             onClick={() => onStatusChange(report._id, 'resolved')}
-                            className="flex-1 px-3 py-2.5 rounded-xl flex items-center justify-center gap-1.5 bg-green-50 text-green-700 border border-green-200 hover:bg-green-100 text-xs font-extrabold uppercase tracking-wider transition-colors disabled:opacity-50"
+                            className="flex-1 px-3 py-2.5 rounded-xl flex items-center justify-center gap-1.5 bg-green-50 dark:bg-green-950/40 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800 hover:bg-green-100 dark:hover:bg-green-900/50 text-xs font-extrabold uppercase tracking-wider transition-colors disabled:opacity-50"
                         >
                             {actionLoading === report._id ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <CheckCircle className="w-3.5 h-3.5" />}
                             Close Case
@@ -224,7 +224,7 @@ const ReportDetailModal = ({ report, onClose, onStatusChange, actionLoading }) =
                         <button
                             disabled={actionLoading === report._id}
                             onClick={() => onStatusChange(report._id, 'removed')}
-                            className="flex-1 px-3 py-2.5 rounded-xl flex items-center justify-center gap-1.5 bg-rose-50 text-rose-700 border border-rose-200 hover:bg-rose-100 text-xs font-extrabold uppercase tracking-wider transition-colors disabled:opacity-50"
+                            className="flex-1 px-3 py-2.5 rounded-xl flex items-center justify-center gap-1.5 bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-400 border border-rose-200 dark:border-rose-800 hover:bg-rose-100 dark:hover:bg-rose-900/50 text-xs font-extrabold uppercase tracking-wider transition-colors disabled:opacity-50"
                         >
                             <XCircle className="w-3.5 h-3.5" /> Dismiss
                         </button>

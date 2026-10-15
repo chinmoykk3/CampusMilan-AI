@@ -150,11 +150,15 @@
 }
 
 /* Custom Component Buttons */
+.premium-button,
 a.premium-button,
-a.secondary-button {
+button.premium-button,
+.secondary-button,
+a.secondary-button,
+button.secondary-button {
   transition: all 0.15s ease !important;
-  border-radius: 6px !important;
-  font-weight: 500 !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
   font-size: 14px !important;
   display: inline-flex;
   justify-content: center;
@@ -162,21 +166,24 @@ a.secondary-button {
   cursor: pointer !important;
 }
 
+.premium-button,
 a.premium-button,
-.dark button.bg-primary-600 {
+button.premium-button {
   background: var(--btn-primary-bg) !important;
   color: var(--btn-primary-text) !important;
   border: 1px solid transparent !important;
 }
 
+.premium-button:hover:not(:disabled),
 a.premium-button:hover:not(:disabled),
-.dark button.bg-primary-600:hover:not(:disabled) {
+button.premium-button:hover:not(:disabled) {
   background: var(--btn-primary-hover) !important;
   color: var(--btn-primary-text) !important;
 }
 
+.premium-button:active:not(:disabled),
 a.premium-button:active:not(:disabled),
-.dark button.bg-primary-600:active:not(:disabled) {
+button.premium-button:active:not(:disabled) {
   transform: scale(0.98) !important;
 }
 

@@ -83,42 +83,42 @@ const Navbar = () => {
                                             animate={{ opacity: 1, y: 0 }}
                                             exit={{ opacity: 0, y: 10 }}
                                             transition={{ duration: 0.15 }}
-                                            className="absolute right-0 mt-2 w-56 bg-white border border-stone-200 rounded-xl shadow-lg shadow-stone-200/50 py-2 z-50 overflow-hidden"
+                                            className="absolute right-0 mt-2 w-56 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-xl shadow-lg shadow-stone-200/50 dark:shadow-black/30 py-2 z-50 overflow-hidden"
                                         >
-                                            <div className="px-4 py-2 border-b border-stone-100 mb-1">
-                                                <p className="text-sm font-bold text-primary-900 truncate">{user?.name}</p>
-                                                <p className="text-xs text-stone-500 truncate">{user?.email}</p>
+                                            <div className="px-4 py-2 border-b border-stone-100 dark:border-stone-800 mb-1">
+                                                <p className="text-sm font-bold text-primary-900 dark:text-white truncate">{user?.name}</p>
+                                                <p className="text-xs text-stone-500 dark:text-stone-400 truncate">{user?.email}</p>
                                             </div>
-                                            <Link to="/profile" className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-stone-700 hover:bg-stone-50 hover:text-primary-600 transition-colors">
-                                                <User className="w-4 h-4 text-stone-500" />
+                                            <Link to="/profile" className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:bg-stone-50 dark:hover:bg-stone-800 hover:text-primary-600 transition-colors">
+                                                <User className="w-4 h-4 text-stone-500 dark:text-stone-400" />
                                                 Profile Setup
                                             </Link>
                                             {user?.role === 'admin' ? (
                                                 <>
-                                                    <Link to="/admin/notifications" className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-stone-700 hover:bg-stone-50 hover:text-primary-600 transition-colors">
-                                                        <Bell className="w-4 h-4 text-stone-500" />
+                                                    <Link to="/admin/notifications" className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:bg-stone-50 dark:hover:bg-stone-800 hover:text-primary-600 transition-colors">
+                                                        <Bell className="w-4 h-4 text-stone-500 dark:text-stone-400" />
                                                         System Broadcasts
                                                     </Link>
-                                                    <Link to="/admin/settings" className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-stone-700 hover:bg-stone-50 hover:text-primary-600 transition-colors">
-                                                        <Settings className="w-4 h-4 text-stone-500" />
+                                                    <Link to="/admin/settings" className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:bg-stone-50 dark:hover:bg-stone-800 hover:text-primary-600 transition-colors">
+                                                        <Settings className="w-4 h-4 text-stone-500 dark:text-stone-400" />
                                                         Admin Settings
                                                     </Link>
                                                 </>
                                             ) : (
                                                 <>
-                                                    <Link to="/profile" className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-stone-700 hover:bg-stone-50 hover:text-primary-600 transition-colors">
-                                                        <Bell className="w-4 h-4 text-stone-500" />
+                                                    <Link to="/profile" className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:bg-stone-50 dark:hover:bg-stone-800 hover:text-primary-600 transition-colors">
+                                                        <Bell className="w-4 h-4 text-stone-500 dark:text-stone-400" />
                                                         My Notifications
                                                     </Link>
-                                                    <Link to="/profile" className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-stone-700 hover:bg-stone-50 hover:text-primary-600 transition-colors">
-                                                        <Settings className="w-4 h-4 text-stone-500" />
+                                                    <Link to="/profile" className="flex items-center gap-3 px-4 py-2 text-sm font-medium text-stone-700 dark:text-stone-300 hover:bg-stone-50 dark:hover:bg-stone-800 hover:text-primary-600 transition-colors">
+                                                        <Settings className="w-4 h-4 text-stone-500 dark:text-stone-400" />
                                                         Account Settings
                                                     </Link>
                                                 </>
                                             )}
-                                            <div className="h-px bg-stone-100 my-1"></div>
-                                            <button onClick={handleLogout} className="flex w-full items-center gap-3 px-4 py-2 text-sm font-bold text-red-600 hover:bg-red-50 transition-colors cursor-pointer text-left">
-                                                <LogOut className="w-4 h-4 text-red-500" />
+                                            <div className="h-px bg-stone-100 dark:bg-stone-800 my-1"></div>
+                                            <button onClick={handleLogout} className="flex w-full items-center gap-3 px-4 py-2 text-sm font-bold text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors cursor-pointer text-left">
+                                                <LogOut className="w-4 h-4 text-red-500 dark:text-red-400" />
                                                 Sign Out
                                             </button>
                                         </motion.div>

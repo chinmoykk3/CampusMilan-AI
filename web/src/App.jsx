@@ -63,7 +63,7 @@ function App() {
   }, [user]);
   return (
     <ThemeProvider defaultTheme="light" storageKey="campusमिलन-ui-theme">
-      <div className="min-h-screen transition-colors duration-300 font-sans">
+      <div className="min-h-screen bg-stone-50/30 dark:bg-stone-950 text-slate-900 dark:text-stone-100 transition-colors duration-200 font-sans">
         <BrowserRouter>
           <Routes>
             {/* Default App Layout wrapping Navbar */}
